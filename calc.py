@@ -183,12 +183,255 @@ def action_cos():
 
     num1 = Numberentry1.get();
     if(is_number(num1)==True and is_number(num2)==True):
-         num1 = casting(num1)
-         ans = np.cos(num1)
-           
-root = Tk();
-root.title('Python Calculator');
-root.geometry('380x300+200+250');
+        num1 = casting(num1)
+        ans = str(np.cos(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+
+# Sine Function
+def action_sin():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True and is_number(num2)==True):
+        num1 = casting(num1)
+        ans = str(np.sin(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+
+# Tangent Function
+def action_tan():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True and is_number(num2)==True):
+        num1 = casting(num1)
+        ans = str(np.tan(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+
+# Inverse Trigonometric Functions        
+# Arc cosine Function
+def action_acos():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True and is_number(num2)==True):
+        num1 = casting(num1)
+        ans = str(np.acos(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+        
+# Arc sine function
+def action_asin():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True and is_number(num2)==True):
+        num1 = casting(num1)
+        ans = str(np.asin(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+        
+# Arc tangent function
+def action_atan():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True and is_number(num2)==True):
+        num1 = casting(num1)
+        ans = str(np.atan(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+        
+# Logarithmic Function
+def action_log():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True and is_number(num2)==True):
+        num1 = casting(num1)
+        ans = str(np.log(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+
+# Exponential Function
+def action_exp():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True and is_number(num2)==True):
+        num1 = casting(num1)
+        ans = str(np.exp(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+
+root = Tk()
+root.title('Python Calculator')
+root.geometry('380x300+200+250')
 Titlelabel = Label(root, fg = 'green' , font = 'none 10 bold underline' ,text = 'Python Calculator', compound = CENTER)
 Titlelabel.place(relx=0.5, rely=0.1, anchor='center')
 Showlabel = Entry(root);
