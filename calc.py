@@ -173,7 +173,7 @@ def action_percent():
     Showlabel.delete(0, END)
 
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'Percentage');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -209,7 +209,7 @@ def action_cos():
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'cos');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -242,7 +242,7 @@ def action_sin():
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'sin');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -275,7 +275,7 @@ def action_tan():
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'tan');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -309,7 +309,7 @@ def action_acos():
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'acos');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -342,7 +342,7 @@ def action_asin():
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'asin');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -381,7 +381,7 @@ def action_atan():
     ans = "0"
 
     Showlabel.insert(0, ans);
-    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    Showlabel.place(relx=0.5, rely=0.6, anchor='atan')
 
     num1 = Numberentry1.get();
     if(is_number(num1)==True and is_number(num2)==True):
@@ -408,7 +408,7 @@ def action_log():
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'log');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -441,7 +441,7 @@ def action_exp():
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'antilog');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
