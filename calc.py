@@ -1,5 +1,7 @@
 from tkinter import *;
 from tkinter import messagebox;
+import numpy as np
+import math
 
 def actionauthor():
     messagebox.showinfo("IT Workshop Project")
@@ -133,9 +135,6 @@ def actionDiv():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
 
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
-
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'Division');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
@@ -166,9 +165,6 @@ def actionDiv():
         
 #Percentage sign function
 def action_percent():
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
-
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
 
@@ -204,9 +200,6 @@ def action_percent():
 def action_cos():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'cos');
@@ -218,7 +211,7 @@ def action_cos():
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
 
     num1 = Numberentry1.get();
-    if(is_number(num1)==True and is_number(num2)==True):
+    if(is_number(num1)==True):
         num1 = casting(num1)
         ans = str(np.cos(num1))
         Showtemplabel.delete(0, END);
@@ -237,9 +230,6 @@ def action_cos():
 def action_sin():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'sin');
@@ -251,7 +241,7 @@ def action_sin():
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
 
     num1 = Numberentry1.get();
-    if(is_number(num1)==True and is_number(num2)==True):
+    if(is_number(num1)==True):
         num1 = casting(num1)
         ans = str(np.sin(num1))
         Showtemplabel.delete(0, END);
@@ -270,10 +260,7 @@ def action_sin():
 def action_tan():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
-  
+    
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'tan');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
@@ -284,7 +271,7 @@ def action_tan():
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
 
     num1 = Numberentry1.get();
-    if(is_number(num1)==True and is_number(num2)==True):
+    if(is_number(num1)==True):
         num1 = casting(num1)
         ans = str(np.tan(num1))
         Showtemplabel.delete(0, END);
@@ -304,9 +291,6 @@ def action_tan():
 def action_acos():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'acos');
@@ -318,7 +302,7 @@ def action_acos():
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
 
     num1 = Numberentry1.get();
-    if(is_number(num1)==True and is_number(num2)==True):
+    if(is_number(num1)==True):
         num1 = casting(num1)
         ans = str(np.acos(num1))
         Showtemplabel.delete(0, END);
@@ -337,9 +321,6 @@ def action_acos():
 def action_asin():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'asin');
@@ -351,7 +332,7 @@ def action_asin():
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
 
     num1 = Numberentry1.get();
-    if(is_number(num1)==True and is_number(num2)==True):
+    if(is_number(num1)==True):
         num1 = casting(num1)
         ans = str(np.asin(num1))
         Showtemplabel.delete(0, END);
@@ -370,9 +351,6 @@ def action_asin():
 def action_atan():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'Division');
@@ -384,7 +362,7 @@ def action_atan():
     Showlabel.place(relx=0.5, rely=0.6, anchor='atan')
 
     num1 = Numberentry1.get();
-    if(is_number(num1)==True and is_number(num2)==True):
+    if(is_number(num1)==True):
         num1 = casting(num1)
         ans = str(np.atan(num1))
         Showtemplabel.delete(0, END);
@@ -403,9 +381,6 @@ def action_atan():
 def action_log():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'log');
@@ -417,7 +392,7 @@ def action_log():
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
 
     num1 = Numberentry1.get();
-    if(is_number(num1)==True and is_number(num2)==True):
+    if(is_number(num1)==True):
         num1 = casting(num1)
         ans = str(np.log(num1))
         Showtemplabel.delete(0, END);
@@ -436,9 +411,6 @@ def action_log():
 def action_exp():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
     Showtemplabel.insert(0, 'antilog');
@@ -450,9 +422,9 @@ def action_exp():
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
 
     num1 = Numberentry1.get();
-    if(is_number(num1)==True and is_number(num2)==True):
+    if(is_number(num1)==True):
         num1 = casting(num1)
-        ans = str(np.exp(num1))
+        ans = str(math.exp(num1))
         Showtemplabel.delete(0, END);
         Showlabel.delete(0, END)
 
@@ -488,33 +460,39 @@ def action_pi():
 
     Showlabel.insert(0, ans);
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
-
     
-# e function
-def action_e:
-    Showtemplabel.delete(0, END);
+# Floor Function
+def action_floor:
+     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
-
+  
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'antilog');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
 
     Showlabel.insert(0, ans);
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
-    ans = str(np.e)
-    Showtemplabel.delete(0, END);
-    Showlabel.delete(0, END)
 
-    Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
-    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True):
+        num1 = casting(num1)
+        ans = str(math.floor(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
 
-    Showlabel.insert(0, ans);
-    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
     
+#Ceil Function
+def
 root = Tk()
 root.title('Python Calculator')
 root.geometry('380x300+200+250')
