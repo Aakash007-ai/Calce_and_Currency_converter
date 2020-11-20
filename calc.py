@@ -470,7 +470,7 @@ def action_power():
     else:
         messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
 # Square Function
-def action_square():
+def action_sq():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
 
@@ -501,7 +501,7 @@ def action_square():
         messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
         
 # Square-root Function
-def action_square_root():
+def action_sq_root():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
 
@@ -712,6 +712,7 @@ def action_fact():
     else:
         messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
 
+# Main Window        
 root = Tk()
 root.title('Python Calculator')
 root.geometry('380x300+200+250')
@@ -744,11 +745,64 @@ percent_button = Button(root, text="%", width = 5, command = action_percent)
 percent_button.place(relx=0.9, rely=0.7)
 
 # Buttons for Trigonometric Functions(cos,sin,tan)
-cos_button = Button(root, text="%", width = 5, command = action_cos)
-sin_button.place(relx=1.1, rely=0.7)
+cos_button = Button(root, text="cos", width = 5, command = action_cos)
+cos_button.place(relx=1.1, rely=0.7)
 
-sin_button = Button(root, text="%", width = 5, command = action_sin)
+sin_button = Button(root, text="sin", width = 5, command = action_sin)
 sin_button.place(relx=1.3, rely=0.7)
+
+tan_button = Button(root, text="tan", width = 5, command = action_tan)
+tan_button.place(relx=1.5, rely=0.7)
+
+# Buttons for Inverse Trigonometric Functions(cos,sin,tan)
+acos_button = Button(root, text="acos", width = 5, command = action_acos)
+acos_button.place(relx=2.1, rely=0.7)
+
+asin_button = Button(root, text="asin", width = 5, command = action_asin)
+asin_button.place(relx=2.3, rely=0.7)
+
+atan_button = Button(root, text="atan", width = 5, command = action_atan)
+atan_button.place(relx=2.5, rely=0.7)
+
+#Logarithmic Functions
+ln_button = Button(root, text="ln", width = 5, command = action_ln)
+ln_button.place(relx=2.7, rely=0.7)
+
+log_button = Button(root, text="log", width = 5, command = action_log)
+log_button.place(relx=2.9, rely=0.7)
+
+# Power Buttons
+pow_button = Button(root, text="power", width = 5, command = action_power)
+pow_button.place(relx=3.1, rely=0.7)
+
+sq_button = Button(root, text="^2", width = 5, command = action_sq)
+sq_button.place(relx=3.3, rely=0.7)
+
+sq_root_button = Button(root, text="^1/2", width = 5, command = action_sq_root)
+sq_root_button.place(relx=3.5, rely=0.7)
+
+# Exponential Button
+exp_button = Button(root, text="exp", width = 5, command = action_exp)
+exp_button.place(relx=3.7, rely=0.7)
+
+# Antilog Button
+antilog_button = Button(root, text="antilog", width = 5, command = action_exp)
+antilog_button.place(relx=3.9, rely=0.7)
+
+# Pi button
+pi_button = Button(root, text="pi", width = 5, command = action_pi)
+pi_button.place(relx=4.1, rely=0.7)
+
+# Floor and Ceil Function
+floor_button = Button(root, text="floor", width = 5, command = action_floor)
+floor_button.place(relx=4.3, rely=0.7)
+
+ceil_button = Button(root, text="ceil", width = 5, command = action_ceil)
+ceil_button.place(relx=4.5, rely=0.7)
+
+# Factorial Button
+fact_button = Button(root, text="fact", width = 5, command = action_fact)
+fact_button.place(relx=4.7, rely=0.7)
 
 root.resizable(False, False);
 root.mainloop();
