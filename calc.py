@@ -463,7 +463,7 @@ def action_pi():
     
 # Floor Function
 def action_floor:
-     Showtemplabel.delete(0, END);
+    Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
@@ -492,7 +492,73 @@ def action_floor:
         messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
     
 #Ceil Function
-def
+def action_ceil():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'antilog');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True):
+        num1 = casting(num1)
+        ans = str(math.ceil(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+
+#Factorial Function
+def factorial(n):
+    if(n==0):
+        return 1
+    elif(n>=1):
+        return(n*factorial(n-1))
+    else:
+        return("Error")
+    
+def action_fact():  
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'antilog');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True):
+        num1 = casting(num1)
+        ans = str(factorial(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+
 root = Tk()
 root.title('Python Calculator')
 root.geometry('380x300+200+250')
@@ -505,6 +571,7 @@ Numberentry2 = Entry(root);
 Numberentry1.place(relx=0.5, rely=0.3, anchor='center')
 Numberentry2.place(relx=0.5, rely=0.4, anchor='center')
 
+# Operation Buttons(+,-,x,/,%)
 plusbutton = Button(root, text="+", width = 5, command = actionPlus);
 plusbutton.place(relx=0.1, rely=0.7)
 
@@ -523,5 +590,6 @@ authorbutton.place(relx = 0.5, rely=0.95, anchor='center');
 percent_button = Button(root, text="%", width = 5, command = action_percent)
 percent_button.place(relx=0.9, rely=0.7)
 
+# Buttons for Trigonometric Functions 
 root.resizable(False, False);
 root.mainloop();
