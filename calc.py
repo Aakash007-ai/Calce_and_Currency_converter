@@ -37,7 +37,7 @@ def actionPlus():
     Showlabel.delete(0, END)
 
     Showtemplabel.config(fg='red', bg='#9ed8ee')
-    Showtemplabel.insert(0, 'Summation');
+    Showtemplabel.insert(0, '+');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
     ans = "0";
     Showlabel.insert(0, ans);
@@ -55,7 +55,7 @@ def actionPlus():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='red', bg='#9ed8ee')
-        Showtemplabel.insert(0, 'Summation');
+        Showtemplabel.insert(0, '+');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -69,7 +69,7 @@ def actionMinus():
     Showlabel.delete(0, END)
 
     Showtemplabel.config(fg='green', bg='#ece7e2')
-    Showtemplabel.insert(0, 'Subtraction');
+    Showtemplabel.insert(0, '-');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0";
@@ -89,7 +89,7 @@ def actionMinus():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='green', bg='#ece7e2')
-        Showtemplabel.insert(0, 'Subtraction');
+        Showtemplabel.insert(0, '-');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -103,7 +103,7 @@ def actionMul():
     Showlabel.delete(0, END)
 
     Showtemplabel.config(fg='blue', bg='#cacba9')
-    Showtemplabel.insert(0, 'Multiplication');
+    Showtemplabel.insert(0, 'x');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -122,7 +122,7 @@ def actionMul():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='blue', bg='#cacba9')
-        Showtemplabel.insert(0, 'Multiplication');
+        Showtemplabel.insert(0, 'x');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -136,7 +136,7 @@ def actionDiv():
     Showlabel.delete(0, END)
 
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, '/');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -155,7 +155,7 @@ def actionDiv():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, '/');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -169,7 +169,7 @@ def action_percent():
     Showlabel.delete(0, END)
 
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Percentage');
+    Showtemplabel.insert(0, '%');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -188,7 +188,7 @@ def action_percent():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, '%');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -218,7 +218,7 @@ def action_cos():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, 'cos');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -248,7 +248,7 @@ def action_sin():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, 'sin');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -278,7 +278,7 @@ def action_tan():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, 'tan');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -309,7 +309,7 @@ def action_acos():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, 'cos_-1');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -339,7 +339,7 @@ def action_asin():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, 'sin_-1');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -353,7 +353,7 @@ def action_atan():
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'Division');
+    Showtemplabel.insert(0, 'atan');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -369,7 +369,7 @@ def action_atan():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, 'tan_-1');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -378,6 +378,36 @@ def action_atan():
         messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
         
 # Logarithmic Function
+def action_ln():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+  
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'log_e');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True):
+        num1 = casting(num1)
+        ans = str(np.log(num1))
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'log_e');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+
+# Log Function(log base 10)
 def action_log():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
@@ -394,12 +424,12 @@ def action_log():
     num1 = Numberentry1.get();
     if(is_number(num1)==True):
         num1 = casting(num1)
-        ans = str(np.log(num1))
+        ans = str(math.log(num1)/math.log(10))
         Showtemplabel.delete(0, END);
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, 'log_10');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -407,13 +437,106 @@ def action_log():
     else:
         messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
 
+# Power Function
+def action_power():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'power');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    num2 = Numberentry2.get();
+    if(is_number(num1)==True and is_number(num2)==True):
+        num1 = casting(num1);
+        num2 = casting(num2);
+        ans = str(num1 ** num2);
+
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'power');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+# Square Function
+def action_square():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'square');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True):
+        num1 = casting(num1);
+        ans = str(num1 ** 2);
+
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'square');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
+        
+# Square-root Function
+def action_square_root():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'sq_root');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True):
+        num1 = casting(num1);
+        ans = str(num1 ** 0.5);
+
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'sq_root');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
 # Exponential Function
 def action_exp():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
   
     Showtemplabel.config(fg='yellow', bg='#8dad96')
-    Showtemplabel.insert(0, 'antilog');
+    Showtemplabel.insert(0, 'anti_ln');
     Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
     ans = "0"
@@ -429,7 +552,7 @@ def action_exp():
         Showlabel.delete(0, END)
 
         Showtemplabel.config(fg='yellow', bg='#8dad96')
-        Showtemplabel.insert(0, 'Division');
+        Showtemplabel.insert(0, 'anti_ln');
         Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
 
         Showlabel.insert(0, ans);
@@ -437,6 +560,36 @@ def action_exp():
     else:
         messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
         
+# Antilog Function(10 raised to the power entered number)        
+def action_antilog():
+    Showtemplabel.delete(0, END);
+    Showlabel.delete(0, END)
+
+    Showtemplabel.config(fg='yellow', bg='#8dad96')
+    Showtemplabel.insert(0, 'antilog');
+    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+    ans = "0"
+
+    Showlabel.insert(0, ans);
+    Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+
+    num1 = Numberentry1.get();
+    if(is_number(num1)==True):
+        num1 = casting(num1);
+        ans = str(10 ** num1);
+
+        Showtemplabel.delete(0, END);
+        Showlabel.delete(0, END)
+
+        Showtemplabel.config(fg='yellow', bg='#8dad96')
+        Showtemplabel.insert(0, 'Antilog');
+        Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+
+        Showlabel.insert(0, ans);
+        Showlabel.place(relx=0.5, rely=0.6, anchor='center')
+    else:
+        messagebox.showerror("Error", "Enter a Valid number\ne.g. 123, 0.123, .123, -0.123, 123.456")
 # Pie function
 def action_pi():
     Showtemplabel.delete(0, END);
@@ -590,6 +743,12 @@ authorbutton.place(relx = 0.5, rely=0.95, anchor='center');
 percent_button = Button(root, text="%", width = 5, command = action_percent)
 percent_button.place(relx=0.9, rely=0.7)
 
-# Buttons for Trigonometric Functions 
+# Buttons for Trigonometric Functions(cos,sin,tan)
+cos_button = Button(root, text="%", width = 5, command = action_cos)
+sin_button.place(relx=1.1, rely=0.7)
+
+sin_button = Button(root, text="%", width = 5, command = action_sin)
+sin_button.place(relx=1.3, rely=0.7)
+
 root.resizable(False, False);
 root.mainloop();
